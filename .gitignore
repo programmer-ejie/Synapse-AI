@@ -1,0 +1,8 @@
+# Local/generated Python files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Keep the large dataset out of git
+synapse_api/Dataset/
+synapse_api/Data/
