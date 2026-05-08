@@ -5,32 +5,110 @@
 
 .site-header {
   width: min(1180px, 100%);
-  margin: 0 auto 18px;
+  margin: 0 auto 22px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-radius: 14px;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 18px 48px rgba(15, 23, 42, 0.06);
+  backdrop-filter: blur(16px);
 }
 
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 11px;
   color: var(--text-h);
-  font-weight: 800;
   text-decoration: none;
 }
 
-.brand img {
-  width: 36px;
-  height: 36px;
+.brand-mark {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: #07111f;
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.16);
+}
+
+.brand-mark img {
+  width: 42px;
+  height: 42px;
+}
+
+.brand-copy {
+  display: grid;
+  gap: 1px;
+}
+
+.brand-copy strong {
+  color: var(--text-h);
+  font-family: var(--heading);
+  font-size: 21px;
+  font-weight: 850;
+  line-height: 1;
+}
+
+.brand-copy small {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 750;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.header-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .header-link {
-  color: var(--text);
-  font-size: 15px;
-  font-weight: 700;
+  min-height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 0 16px;
+  background: linear-gradient(135deg, #0f766e, #111827);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 800;
   text-decoration: none;
+  box-shadow: 0 12px 24px rgba(15, 118, 110, 0.22);
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    filter 160ms ease;
+}
+
+.header-link:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 30px rgba(15, 118, 110, 0.28);
+  filter: saturate(1.08);
+}
+
+.header-link:focus-visible {
+  outline: 3px solid rgba(20, 184, 166, 0.25);
+  outline-offset: 3px;
+}
+
+.status-pill {
+  min-height: 34px;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0 12px;
+  background: #f8fafc;
+  color: #0f766e;
+  font-size: 12px;
+  font-weight: 850;
 }
 
 .hero-section,
@@ -543,8 +621,22 @@
 }
 
 @media (max-width: 640px) {
-  .header-link {
+  .status-pill {
     display: none;
+  }
+
+  .brand-copy strong {
+    font-size: 18px;
+  }
+
+  .brand-copy small {
+    display: none;
+  }
+
+  .header-link {
+    min-height: 34px;
+    padding: 0 12px;
+    font-size: 12px;
   }
 
   .hero-copy h1 {

@@ -216,12 +216,20 @@ function App() {
     <main className="site-shell">
       <header className="site-header" aria-label="Main navigation">
         <a className="brand" href="/" aria-label="Synapse AI home">
-          <img src="/synapse-logo.svg" alt="" />
-          <span>Synapse AI</span>
+          <span className="brand-mark">
+            <img src="/synapse-mark.svg" alt="" />
+          </span>
+          <span className="brand-copy">
+            <strong>Synapse AI</strong>
+            <small>Clinical risk intelligence</small>
+          </span>
         </a>
-        <a className="header-link" href="#assessment">
-          Start assessment
-        </a>
+        <nav className="header-actions" aria-label="Primary">
+          <span className="status-pill">Model V3</span>
+          <a className="header-link" href="#assessment">
+            Start assessment
+          </a>
+        </nav>
       </header>
 
       <section className="hero-section">
