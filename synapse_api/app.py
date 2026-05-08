@@ -13,6 +13,7 @@ MODEL_PATH = MODEL_DIR / "risk_model_v3_clinical.pkl"
 FEATURES_PATH = MODEL_DIR / "risk_model_v3_features.pkl"
 
 app = Flask(__name__)
+app.url_map.strict_slashes = False
 CORS(app)
 
 model = joblib.load(MODEL_PATH)
