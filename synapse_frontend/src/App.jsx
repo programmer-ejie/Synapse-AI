@@ -2,7 +2,9 @@ import { useMemo, useState } from 'react'
 import doctorImage from './assets/ai-doctor.svg'
 import './App.css'
 
-const PREDICT_URL = 'https://synapse-ai-z2rt.onrender.com/predict'
+const PREDICT_URL =
+  import.meta.env.VITE_PREDICT_URL ??
+  'https://synapse-ai-z2rt.onrender.com/predict'
 
 const fields = [
   {
