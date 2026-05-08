@@ -6,3 +6,10 @@ __pycache__/
 # Keep the large dataset out of git
 synapse_api/Dataset/
 synapse_api/Data/
+
+# Training-only artifacts not needed by the Render API
+synapse_api/.ipynb_checkpoints/
+synapse_api/Docs/
+synapse_api/Training.ipynb
+synapse_api/risk_model_vitals_basic.pkl
+synapse_api/Data/

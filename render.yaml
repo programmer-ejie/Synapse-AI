@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: synapse-ai
+    runtime: python
+    rootDir: synapse_api
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
