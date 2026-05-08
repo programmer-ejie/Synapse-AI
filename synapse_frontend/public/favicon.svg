@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Synapse AI logo</title>
+  <desc id="desc">A neural pulse mark for Synapse AI.</desc>
+  <defs>
+    <linearGradient id="bg" x1="10" y1="8" x2="56" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#17D7B5"/>
+      <stop offset="0.55" stop-color="#3D7CFF"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="pulse" x1="18" y1="31" x2="48" y2="31" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#DFF7FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#07111F"/>
+  <path d="M14 35c7.5-23.5 29.5-23.5 37-9.5 6 11.2-1.9 25.5-16.3 27.1C21.8 54 9.6 48.7 14 35Z" fill="url(#bg)"/>
+  <path d="M17 34h8.1l4.1-11 6.6 22 4.8-14H47" fill="none" stroke="url(#pulse)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="17" cy="34" r="3.5" fill="#FFFFFF"/>
+  <circle cx="47" cy="31" r="3.5" fill="#FFFFFF"/>
+</svg>
